@@ -1,1 +1,1 @@
-https://larssongithub.github.io/martinshemsida/formular.html?# martinshemsida
+https://larssongithub.github.io/martinshemsida/index.html martinshemsida
