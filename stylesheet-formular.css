@@ -1,0 +1,164 @@
+/*DENNA FIL ÄR HELT UNIK FÖR FORMULAR.HTML*/
+
+/*övertext och brödtext*/
+
+h1 {
+    background-image: url(img/lobster.png);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: 300px;
+    padding: 80px 0px 100px 0px;
+    text-align: center;
+    font-size: 60px;
+    font-family: aileron bitner;
+    font-style: italic;
+}
+
+body {  
+    margin: 0 5%;
+    font-family: verdana, arial, geneva, arial f000000;
+    background-image: url(img/sea.jpg);
+    background-repeat: repeat;
+    background-attachment: fixed;
+	background-position: center;
+	background-size: cover;
+}
+
+.overinfo {                                                          /*Detta är en av flera klasslsektorer*/
+    text-align: center;
+    border: 5px #ab0d0d dotted;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    background-color: #faeded;
+}
+
+/*bakgrundsbild och backgrund*/
+
+
+
+
+hr {
+	border: ridge 3px;
+	margin: 30px 0 30px 0;
+}
+
+/*allt själva formuläret*/
+
+.form {
+    border: 5px #ab0d0d dotted;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: #faeded;
+
+}
+    
+form > p , li {                                                          /*En av flera combinatorer*/ 
+    color: #f00000;
+}
+
+/*själva attribut, input, lista, mm, dvs där man anger information*/
+    
+ul {
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+li {
+    margin-bottom: 20px;
+}                         
+                                                                            /*En av flera atribute selektorer*/
+input[type=text] , [type=date] , [type=email] {
+    width: 200px;
+    padding: 15px 0px 10px 0px;
+    border: 3px #ab0d0d dotted;
+    border-radius: 5px;
+    margin-top: 10px;  
+    display: block;
+}
+
+textarea {
+    padding: 5px;
+    border: 3px #ab0d0d dotted;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+    
+select {
+    display: block;
+    margin-top: 10px; 
+}
+    
+option { 
+    width: 100px;    
+}
+
+/*jagvillhahummer knapp!*/
+
+.knappform {
+    border: 2px #ab0d0d solid;
+    padding: 10px;
+    background: #cd5c5c;
+    border-radius: 30px;
+    cursor: pointer;
+    color: #ffffff;
+}
+    
+.knappform:hover {                                                         /*En av flera hover och pusedo element*/
+    background-color: #ffffff;
+    color: #000000;
+    border: 2px #000000 solid;
+}
+
+.knappform:active {
+    border: 2px #ab0d0d solid;
+    background-color: #cd5c5c;
+    color: #ffffff;
+}
+
+/*slut på formuläret*/
+
+/*tillbakaknapp*/
+
+nav {
+	margin-bottom: 40px;
+}
+
+.tillbakamenu {
+	display: inline;
+	padding: 0px; 
+}
+
+.tillbaka-knapp {
+    margin: 10px 0px 0px 0px; 
+	font-size: 15px;
+    border: black 2px solid;
+    padding: 5px;
+	width: 150px;
+    text-decoration: none;
+    color: black;
+	cursor: pointer;
+}
+
+                                                                /*har du större skärm än 800 kommer formuläret att stanna på 700px och har du mindre skärm än 321px stanner den på 320px!*/
+@media screen and (max-width: 515px) {
+	
+	.tillbakamenu {
+		display: block;
+	}
+}
+
+@media screen and (min-width: 800px) {
+    
+    .overinfo {
+        max-width: 700px;
+        margin: auto;
+        margin-bottom: 20px;
+    }
+    .form {
+        max-width: 700px;
+        margin: auto;
+        margin-bottom: 20px;
+    }
+}

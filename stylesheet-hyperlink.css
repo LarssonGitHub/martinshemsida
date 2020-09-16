@@ -1,0 +1,110 @@
+/*Allt som anges i denna fil är unika för hyperlink.html*/
+
+/*alla ändring inom lorem texten*/
+
+
+h1 {
+    font-family: aileron bitner;
+    text-align: center;
+    font-style: italic;
+}
+.lorem {
+    margin: 30px 0px 50px 0px;
+    display: inline-block;
+    background: #eef5ee;
+    padding: 1%;
+    border-radius: 10px;
+    opacity: 0.7;
+    color: black;
+}
+
+.lorem > p {
+    border: 1px black solid;
+    padding: 10px;
+    font-family: didot;
+}
+.lorem > p::first-letter {
+    color: black;
+    font-size: 200%;
+}
+
+figure {
+    margin-bottom: 30px;
+    text-align: left;
+    display: inline-block;
+    background: #eef5ee;
+    padding: 1%;
+    border-radius: 10px;
+    opacity: 0.7;
+    color: black;
+}
+
+figcaption {
+    font-family: didot;
+    font-size: 15px;
+}
+
+/*adress, email, mm, lista med kontakter*/
+
+h4 {
+margin-bottom: 3px;
+display: inline-block;
+background: #eef5ee;
+padding: 1%;
+border-radius: 10px;
+opacity: 0.7;
+color: black;
+}
+
+.kontakt   {
+    padding: 5px 0px 0px 0;
+    margin-bottom: 0px;
+    margin-top: 2px;
+    display: inline-block;
+    background: #eef5ee;
+    padding: 1%;
+    border-radius: 10px;
+    opacity: 0.7;
+    color: black;
+}
+.kontakt > a , s {
+    display: inline-block;
+    text-decoration: none;
+    padding: 5px;
+    border-radius: 5px;
+    color: black;
+}
+
+img {
+	border: 1px solid #000000;
+}
+
+nav {
+	margin-bottom: 40px;
+}
+
+.tillbakamenu {
+	display: inline;
+	padding: 0px; 
+}
+
+.tillbaka-knapp {
+    margin: 10px 0px 0px 0px; 
+	font-size: 15px;
+    border: black 2px solid;
+    padding: 5px;
+	width: 150px;
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+
+/*speicalisera media*/
+
+@media screen and (max-width: 800px) {
+	
+	img {
+		width: 100%;
+	}
+
+}

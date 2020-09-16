@@ -1,0 +1,101 @@
+﻿<!DOCTYPE html>
+
+<html lang="sv">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Formulär</title>
+    
+    <link rel="icon" href="img/favicon.png">
+    <link rel="apple-touch-icon" href="img/favicon.png">
+    <link rel="stylesheet" type="text/css" href="stylesheet-formular.css">
+    
+</head>
+
+<body>
+
+    <!--övertext-->
+<section>
+    
+    <h1> Den råa hummern </h1>
+
+
+<header class="overinfo">
+    
+    <p> Välkommen till den råa hummern, vi är ett familjeägt företag och levererar hummrar hem till din ytterdörr! </p>
+    <p><em><small> Om det är bilmärket hummer, eller själva kräldjuret som lever i vattnet vet vi inte.. </small></em> </p> 
+    
+</header>
+
+<!--Början på formuläre-->
+
+    <form class="form" action="form18.php" method="post">      
+
+        <p> Fyll i dina kontaktuppgifter här så skickar vi in en hummer vid nästa årsskifte! </p>
+
+        <ul>
+            <li><label> Ditt namn: <input type="text" name="from" placeholder="Skriv ditt namn här!"> </label></li>
+            <li><label> Din adress: <input type="text" name="adress" placeholder="Vart tusan bror du?" > </label> </li>
+<!--Får en varning via validering av type="date", har testat, denna funkar inte via edge-->
+            <li><label> Vilket datum vill du ha din hummer levererad? <input type="date" name="date" > </label></li>
+            <li><label>Email: <input type="email" name="email" placeholder="Skriv din mejl!!"></label></li>
+        </ul>
+
+        <input type="hidden" name="subject" value="hummerform">
+
+        <p> Välj vad du vill ha! En hummer? Eller en Hummer? </p>
+
+        <ul>
+            <li><label><input type="radio" name="hum" value="Hummer"> Hummer </label></li>
+            <li><label><input type="radio" name="hum" value="Hummer"> Hummer </label></li>
+        </ul>
+
+        <p> Fyll i varför du ska köpa en hummer?!
+            
+            <br>
+            
+            <label><textarea name="info" rows="6" cols="30" placeholder="Hummer, Hummer, Hummer, Hummer, Hummer, Hummer, Hummer, Hummer, Hummer, Hummer, Hummer, Hummer, Hummer, Hummer, Hummer, Hummer, Hummer, Hummer, Hummer, Hummer, Hummer, Hummer, Hummer, Hummer, Hummer, Hummer, Hummer, Hummer, Hummer, Hummer, Hummer, Hummer, Hummer, Hummer, Hummer!"></textarea></label>
+        </p>                                                                                                                                                
+<!--Själva flervalslistan-->
+
+        <p> Nästan klar, men vi måste veta vilken färg du vill ha på din hummer. </p>
+
+            <select name="dropdown">
+                <option>Blå</option>
+                <option>Röd</option>
+                <option>Grön</option>
+                <option>Rosa</option>
+                <option>Lime</option>
+                <option>Gul</option>
+            </select>
+
+        <p><label> <input type="checkbox"  name="agree" required > Härmed godkänner jag att <b>Den råa hummern</b> inte står får några problem som kommer uppstå. </label></p>
+
+        <p> <input class="knappform" type="submit" name="submit" value="JAG VILL HA MIN HUMMER NU!!"> </p> 
+</form>
+
+<!--Slut på formuläret-->
+
+</section>
+
+	<hr>
+      <nav>
+        
+		 <form class="tillbakamenu" action="index.html">
+            <input class="tillbaka-knapp" type="submit" value="HUVUDSIDA" />
+        </form>
+		<form class="tillbakamenu" action="hyperlink.html">
+            <input class="tillbaka-knapp" type="submit" value="HYPERLÄNKAR" />
+        </form>
+		<form class="tillbakamenu" action="text.html">
+            <input class="tillbaka-knapp" type="submit" value="TYPOGRAFI" />
+        </form>
+		  
+    </nav>   
+
+</body>
+
+</html> 

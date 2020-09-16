@@ -1,0 +1,108 @@
+/* alla dokument delar samma css fil för body (förutom formular.html som har en hel EGEN css fil.)*/
+
+body {
+    margin: 0 5%;
+    font-family: verdana, arial, geneva, arial black;
+    background-color: #deb887;
+}
+
+h1 {
+    font-family: aileron bitner;
+    text-align: center;
+    font-style: italic;
+	
+}
+
+h1 > .h1bakgrund {
+    display: inline-block; 
+    background: #fafad2;
+    padding: 1%;
+    border-radius: 10px;
+	font-size: 40px;
+}
+    
+
+
+h3 {
+    font-family: aileron bitner;
+    font-size: 30px;
+}
+
+
+.headcent {
+        text-align: center;
+        margin: 0 10%;
+        margin-bottom: 20px;
+        font-style: italic;
+        border: 3px dotted #000000;
+        padding: 2px 30px 2px 30px;
+        border-radius: 10px;
+}
+
+.clear {
+    clear: both;
+}
+
+hr {
+	border: ridge 3px;
+	margin: 30px 0 30px 0;
+}
+/*Knappar och klasser, används bara av hyperlink.html så länge!*/
+
+.knapp-alla {
+    margin: 0px 0px 0px 0px;
+    width: 150px;
+    border: 2px #000000 solid;
+    padding: 10px;
+    background: #fafad2;
+    border-radius: 30px;
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+}
+
+.knapp-alla:hover {
+    background-color: #ffba7a;
+    color: white;
+    border: 2px #ffffff solid;
+}
+    
+.knapp-alla:active {
+    border: 2px #000000 solid;
+    color: #000000;
+    background-color: transparent;
+}
+
+
+/*tillbakaknapp (ALLA DOKUMENT utom formular.html delar denna flick, längst ner till höger) */
+
+nav {
+	margin-bottom: 40px;
+}
+
+.tillbakamenu {
+	display: inline;
+	padding: 0px; 
+}
+
+.tillbaka-knapp {
+    margin: 10px 0px 0px 0px; 
+	font-size: 15px;
+    border: black 2px solid;
+    padding: 5px;
+	width: 150px;
+    text-decoration: none;
+    color: black;
+	cursor: pointer;
+}
+
+/*ändringar som görs vid större skärm, tillbakaknappar*/
+
+@media screen and (max-width: 515px) {
+	
+	.tillbakamenu {
+		display: block;
+	}
+}
+
+            
